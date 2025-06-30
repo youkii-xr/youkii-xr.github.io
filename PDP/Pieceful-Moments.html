@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    // Early theme application before page render to prevent flicker
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pieceful Moments">
+  <meta name="author" content="Youkii">
+  <title>Pieceful Moments</title>
+
+  <link rel="icon" type="image/x-icon" href="../assets/images/projects/thumbnails/piecefulmoments.png">
+
+  <!-- Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="bg-[#fef8ec] dark:bg-[#2c2621] text-brown-800 dark:text-[#e8dccf]">
+  <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-[#fdf6ec] dark:bg-[#2a1f1a] transition-opacity duration-500">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-icon">
+        🐾 <!-- or ✦ or 🔆 or 🌀 -->
+      </div>
+    </div>
+  </div>
+  <!-- Navbar Include -->
+  <header class="sticky top-0 z-50 bg-[#fef8ec] dark:bg-[#2c2621] shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="../index.html#about" class="text-2xl font-bold">Youkii</a>
+      <div class="hidden md:flex items-center gap-6 font-medium">
+        <nav class="flex space-x-6">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../contact.html" class ="nav-link">Contact</a>
+        </nav>
+<button id="toggleTheme" class="theme-toggle p-2 rounded-full ml-2">🌓</button>
+      </div>
+      <div class="md:hidden flex items-center gap-3">
+        <button id="nav-toggle" class="focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+<button id="toggleThemeMobile" class="theme-toggle p-2 rounded-full order-2">🌓</button>      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col items-start space-y-3 pb-6 px-6 font-medium">
+      <a href="../index.html" class="nav-link">Home</a>
+          <a href="../contact.html" class ="nav-link">Contact</a>
+    </div>
+  </header>
+
+  <section class="px-6 py-12 max-w-5xl mx-auto">
+    <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Pieceful Moments</h1>
+  
+    <!-- Video -->
+    <div class="w-full rounded-lg overflow-hidden shadow-lg mb-6" style="height: 350px;">
+      <iframe src="https://www.youtube.com/embed/R6fjd9r7MxE?si=jHACgP8MtPMNQ52m" title="Project Video" allowfullscreen class="w-full h-full"></iframe>
+    </div>
+  
+    <!-- Tags -->
+    <div class="mb-6 flex flex-wrap gap-2 justify-center">
+      <span class="tag-label">Unity</span>
+      <span class="tag-label">XR</span>
+      <span class="tag-label">Game</span>
+      <a href="https://www.meta.com/experiences/pieceful-moments/9984002234945743/" target="_blank"> <span class="tag-label" style = "background-color: #0064e0;color: white;">Check On Meta Store</span></a>
+      <a href="https://www.livingmedia.ai/piecefulmoments-vr" target="_blank"> <span class="tag-label" style="background-color: rgba(21, 21, 21, 0.897); color: white;">Living Media</span></a>
+      <a href="https://discord.com" target="_blank"> <span class="tag-label" style="background-color: #5865F2; color: white;">Discord</span></a>
+    </div>
+  
+  
+    <!-- Timeline Sections -->
+    <div class="space-y-16">
+  
+  
+      <!-- About -->
+      <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">About The Game</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Cozy VR Jigsaw Puzzle Game with a twist</strong>, Escape into new Worlds each with its own vibe and atmosphere.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Enjoyed Working with <a href = "https://www.linkedin.com/in/hiran-gnanapragasam-92b83539/" class="dotted-link">Hiran Gnanapragasam</a> at <a href="https://www.livingmedia.ai/" class="dotted-link">Living Media</a> on this project, He is an awesome client</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">💌Note from the developer</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><i><strong>Pieceful Moments</strong> is made with so much passion to make it the <strong>coziest VR Jigsaw Game</strong>. This is just the beginning and there is a lot of cool features to come</i></span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><i>In a fast and hectic world, I hope it helps you <strong>Escape to mystical worlds</strong>, slow down and feel joy in the small details</i></span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><i><strong>I'd love for you to be part of the journey as the game grows.</strong> Join our <a href="https://discord.com/" class="dotted-link">Discord Server</a> to share your feedback and ideas, vote on future puzzle themes, and have cozy gameplay sessions together</i></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+         <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">What Make it Unique</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>400+ puzzle pieces</strong> running stable without any lagging</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Unique Puzzle Selection Interaction</strong>, to complete the vibe of interdimensional traverler, rotate the magical wheel to select your puzzle</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Enjoy your <strong>free 15 DLC pack</strong> on game download</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Play how you are comfortable, whether <strong>Hand Tracking</strong> or with <strong>Controller</strong></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Beginner Friendly</strong> with only Trigger button controlling everything and physical touch interactions</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Every Puzzle is its own World</strong> with carefully selected AI-generated skyboxes & music</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Future-proof Scalable Codebase</strong> build to support new puzzle packs, collectibles, new featuers</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Workflow -->
+      <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">My Contributions</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Game Design & Concept:</strong> Defined the experience goal and translated it into core mechanics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>VR Interaction Design:</strong> Designed and implemented UI controls & iterated on it multiple times till reaching the balance through unique, matching the vibe and beginner friendly UI</span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Editor Tools & Automation Scripts:</strong> to help automating the process of puzzle pieces slicing, layout and DLC packaging</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Performance Optimization:</strong> Tuned graphics and interaction systems to achieve the balance between high quality graphics and high stable FPS</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Artwork & Atmosphere:</strong> hand-picked high-quality AI generated puzzle images, sounds, skyboxes for each puzzle </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Meta Platform Integration:</strong> Implemented DLC using Meta Store's DLC API, handled entitlement checks and ensured submission compilance</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Versions -->
+<div class="timeline-section">
+  <div class="timeline-line">
+    <div class="timeline-pad"></div>
+  </div>
+
+  <div class="timeline-content">
+    <h2 class="text-2xl font-semibold mb-4">Behind The Scenes</h2>
+
+    <!-- Project Entry -->
+    <div class="mb-4">
+      <div class="flex items-center gap-3 mb-1">
+          <span>The game have been through a lot of iterations to achieve the best quality and results. Here is <strong>a sneak peak from previous iterations</strong></span>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">test old shuffle:</h3>
+      </div>
+      <span>didn't work out cause it caused lagging on large piece no</span>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/qznkEeI8f-g?si=mWbp5G2cGJiJhgQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+    </div>
+
+    
+    <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">first physical puzzle selection UI:</h3>
+      </div>
+      <span>by grabbing a phyiscal puzzle box and putting it on the table to start the game</span>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/HTafu175eTk?si=BQ4rcCci7mHcxrxc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+    </div>
+
+     <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">2nd Home:</h3>
+      </div>
+      <span>Cozy Wooden Hut in the middle of the wood</span>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/nc5nJh6YtIo?si=Kdsjve037s1qAEqe"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+    </div>
+
+     <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">3rd Home:</h3>
+      </div>
+      <span>A Better Cozy Wooden Hut and reverted to 2D UI</span>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/VmKZJ2NoijU?si=QkKGMsUJ2S55XXY4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+    </div>
+
+    <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">Blender Modelling</h3>
+      </div>
+      <span>Used python scripts in blender to automated and speed up the puzzle pieces modelling</span>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <img src="../assets/images/projects/PiecefulMoments/blender-puzzle-modelling.jpg" style="border-radius:0%;max-width:300px;height:auto;margin-right: 10px;">
+      </div>
+    </div>
+
+      <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">Final Zen Home</h3>
+      </div>
+      <span>Finally settled on an interdimensional theme with a Zen home found between space and time</span>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <img src="../assets/images/projects/PiecefulMoments/final-home.jpg" style="border-radius:0%;max-width:300px;height:auto;margin-right: 10px;">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </section>
+  
+
+  <!-- Footer Include -->
+ <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-2 text-center">
+  <p class="text-sm">© 2025 Youkii — Built with ☕ and Passion</p>
+  <div class="flex items-center gap-4 text-xl">
+    <!-- icons or links -->
+  </div>
+</div>
+
+  <!-- JS -->
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
