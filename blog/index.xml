@@ -6,7 +6,7 @@
     <description>Recent content on Youkii Blog</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Aug 2025 21:02:16 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 21:06:02 +0300</lastBuildDate>
     <atom:link href="https://youkii-xr.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Youkii-blog</title>
@@ -14,6 +14,13 @@
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://youkii-xr.github.io/blog/posts/papermod/papermod-features/</guid>
       <description>Welcome to my digital garden</description>
+    </item>
+    <item>
+      <title>Test Post5</title>
+      <link>https://youkii-xr.github.io/blog/posts/test-post5/</link>
+      <pubDate>Mon, 18 Aug 2025 21:06:02 +0300</pubDate>
+      <guid>https://youkii-xr.github.io/blog/posts/test-post5/</guid>
+      <description></description>
     </item>
     <item>
       <title>Test Post4</title>
