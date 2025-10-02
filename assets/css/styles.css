@@ -602,3 +602,66 @@ html.dark ::selection {
 .dark .theme-toggle {
   background-color: #3a2d26;
 }
+
+/* Social Button Icons */
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  font-size: 1.1rem;
+  width: 1.2rem;
+  text-align: center;
+}
+
+/* Brand-colored social icons */
+.social-button .fa-github {
+  color: #8B4513;
+}
+
+.social-button .fa-linkedin {
+  color: #0077b5;
+}
+
+
+.social-button .fa-blog {
+  color: #1d7da7;
+}
+
+.social-button .fa-images {
+  color: #0b6780;
+}
+
+.social-button .fa-paperclip {
+  color: #7d8681;
+}
+.social-button .fa-file-pdf {
+  color: #aaaaaa;
+}
+
+.social-button .fa-youtube {
+  color: #ff0000;
+}
+
+.social-button .fa-at {
+  color: #000;
+}
+
+/* Dark mode icon colors */
+html.dark .social-button .fa-github {
+  color: #D2B48C;
+}
+
+html.dark .social-button .fa-linkedin {
+  color: #4FC3F7;
+}
+
+html.dark .social-button .fa-youtube {
+  color: #ff4444;
+}
+
+html.dark .social-button .fa-at {
+  color: #333;
+}
