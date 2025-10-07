@@ -649,6 +649,11 @@ html.dark ::selection {
   color: #000;
 }
 
+.social-button .fa-discord
+{
+  color: #5865F2;
+}
+
 /* Dark mode icon colors */
 html.dark .social-button .fa-github {
   color: #D2B48C;
