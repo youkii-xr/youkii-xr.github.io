@@ -6,49 +6,17 @@
     <description>Recent content in Posts on Youkii Blog</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Aug 2025 21:06:02 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://youkii-xr.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Youkii-blog</title>
-      <link>https://youkii-xr.github.io/blog/posts/papermod/papermod-features/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://youkii-xr.github.io/blog/posts/papermod/papermod-features/</guid>
-      <description>Welcome to my digital garden</description>
-    </item>
-    <item>
-      <title>Test Post5</title>
-      <link>https://youkii-xr.github.io/blog/posts/test-post5/</link>
-      <pubDate>Mon, 18 Aug 2025 21:06:02 +0300</pubDate>
-      <guid>https://youkii-xr.github.io/blog/posts/test-post5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test Post4</title>
-      <link>https://youkii-xr.github.io/blog/posts/test-post4/</link>
-      <pubDate>Mon, 18 Aug 2025 21:02:16 +0300</pubDate>
-      <guid>https://youkii-xr.github.io/blog/posts/test-post4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test Post3</title>
-      <link>https://youkii-xr.github.io/blog/posts/test-post3/</link>
-      <pubDate>Mon, 18 Aug 2025 20:57:51 +0300</pubDate>
-      <guid>https://youkii-xr.github.io/blog/posts/test-post3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test Post2</title>
-      <link>https://youkii-xr.github.io/blog/posts/test-post2/</link>
-      <pubDate>Mon, 18 Aug 2025 11:35:43 +0300</pubDate>
-      <guid>https://youkii-xr.github.io/blog/posts/test-post2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test Post</title>
-      <link>https://youkii-xr.github.io/blog/posts/test-post/</link>
-      <pubDate>Mon, 18 Aug 2025 11:30:49 +0300</pubDate>
-      <guid>https://youkii-xr.github.io/blog/posts/test-post/</guid>
-      <description></description>
+      <title>Six Cats, Infinite Ideas, and One XR Developer</title>
+      <link>https://youkii-xr.github.io/blog/posts/papermod/papermod-features/hello/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://youkii-xr.github.io/blog/posts/papermod/papermod-features/hello/</guid>
+      <description>&lt;p&gt;Hey There! 👋 I am &lt;strong&gt;Salma&lt;/strong&gt; (aka &lt;strong&gt;Youkii&lt;/strong&gt; 🐈‍⬛)&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m currently pursuing a &lt;strong&gt;Computer Engineering Bachaleor&lt;/strong&gt; and work as a &lt;strong&gt;freelance XR Developer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In my free time I like tinkering with different stuff, from &lt;strong&gt;electronics&lt;/strong&gt; and &lt;strong&gt;MCU&lt;/strong&gt; to &lt;strong&gt;crafts&lt;/strong&gt; and &lt;strong&gt;mechanical&lt;/strong&gt; projects. I just like connecting different stuff together and see how it works 👩‍🔧&lt;/p&gt;
+&lt;p&gt;Everything you see on this website - the design, the layout, the portfolio - I built, I like to have my personal touch on my stuff ✨&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
