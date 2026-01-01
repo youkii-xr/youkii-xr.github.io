@@ -670,3 +670,149 @@ html.dark .social-button .fa-youtube {
 html.dark .social-button .fa-at {
   color: #333;
 }
+/* ============================
+   CODE SNIPPET EFFECT STYLES
+   Matches your cozy warm aesthetic
+   ============================ */
+
+/* Code Block Container */
+.code-block {
+  background-color: #fcefdc;
+  border: 2px solid #c4a489;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.code-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Code Header with function name */
+.code-header {
+  background-color: #f4e4c9;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid #c4a489;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Courier New', Monaco, monospace;
+  font-size: 0.9rem;
+}
+
+.code-icon {
+  color: #e0a96d;
+  font-size: 1rem;
+}
+
+.function-name {
+  color: #8d5a3a;
+  font-weight: 600;
+}
+
+/* Code Content */
+.code-content {
+  padding: 1rem 1.25rem;
+  background-color: #fcefdc;
+}
+
+.code-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.code-content li {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #5e4b41;
+  line-height: 1.6;
+}
+
+.code-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #fbbf24;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Code Labels and Values */
+.code-label {
+  color: #c87941;
+  font-weight: 600;
+  font-family: 'Courier New', Monaco, monospace;
+}
+
+.code-value {
+  color: #5e4b41;
+}
+
+.code-string {
+  color: #8d5a3a;
+  font-style: italic;
+}
+
+.code-comment {
+  color: #9a8576;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Dark mode version - matches your warm dark aesthetic */
+html.dark .code-block {
+  background-color: #322720;
+  border-color: #5a4537;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .code-block:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+html.dark .code-header {
+  background-color: #3d2f25;
+  border-bottom-color: #5a4537;
+}
+
+html.dark .code-content {
+  background-color: #322720;
+}
+
+html.dark .code-content li {
+  color: #e8dccf;
+}
+
+html.dark .code-content li::before {
+  color: #f4b97d;
+}
+
+html.dark .function-name {
+  color: #f4b97d;
+}
+
+html.dark .code-icon {
+  color: #e8c674;
+}
+
+html.dark .code-label {
+  color: #f4a460;
+}
+
+html.dark .code-value {
+  color: #e8dccf;
+}
+
+html.dark .code-string {
+  color: #d4b896;
+  font-style: italic;
+}
+
+html.dark .code-comment {
+  color: #a89584;
+}

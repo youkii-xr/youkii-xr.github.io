@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    // Early theme application before page render to prevent flicker
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Lost Language">
+  <meta name="author" content="Youkii">
+  <title>The Lost Language</title>
+
+  <link rel="icon" type="image/x-icon" href="../assets/images/projects/thumbnails/The_Lost_Language.png">
+
+  <!-- Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="bg-[#fef8ec] dark:bg-[#2c2621] text-brown-800 dark:text-[#e8dccf]">
+  <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-[#fdf6ec] dark:bg-[#2a1f1a] transition-opacity duration-500">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-icon">
+        🐾 <!-- or ✦ or 🔆 or 🌀 -->
+      </div>
+    </div>
+  </div>
+  <!-- Navbar Include -->
+  <header class="sticky top-0 z-50 bg-[#fef8ec] dark:bg-[#2c2621] shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="../index.html#about" class="text-2xl font-bold">Youkii</a>
+      <div class="hidden md:flex items-center gap-6 font-medium">
+        <nav class="flex space-x-6">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../contact.html" class ="nav-link">Contact</a>
+        </nav>
+<button id="toggleTheme" class="theme-toggle p-2 rounded-full ml-2">🌓</button>
+      </div>
+      <div class="md:hidden flex items-center gap-3">
+        <button id="nav-toggle" class="focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+<button id="toggleThemeMobile" class="theme-toggle p-2 rounded-full order-2">🌓</button>      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col items-start space-y-3 pb-6 px-6 font-medium">
+      <a href="../index.html" class="nav-link">Home</a>
+          <a href="../contact.html" class ="nav-link">Contact</a>
+    </div>
+  </header>
+
+  <section class="px-6 py-12 max-w-5xl mx-auto">
+    <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">The Lost Language</h1>
+  
+    <!-- Video -->
+    <div class="w-full rounded-lg overflow-hidden shadow-lg mb-6" style="height: 350px;">
+      <iframe src="https://www.youtube.com/embed/nnQnNfJtSWM?si=r-3oBhRFk6v1q_Db" title="Project Video" allowfullscreen class="w-full h-full"></iframe>
+    </div>
+  
+    <!-- Tags -->
+    <div class="mb-6 flex flex-wrap gap-2 justify-center">
+      <span class="tag-label">Ai</span>
+      <span class="tag-label">Hackathon</span>
+      <span class="tag-label">MCP</span>
+      <a href="https://huggingface.co/spaces/youkii-xr/Rosetta-Decoder" target="_blank"> <span class="tag-label" style = "background-color: #ff9d0b;color: white;">Check On Hugging </span></a>
+    </div>
+  
+  
+    <!-- Timeline Sections -->
+    <div class="space-y-16">
+  
+  
+      <!-- About -->
+      <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">About</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Ai Hieroglyphic Translator</strong> just scan the artifact to know its story✨</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Submission to Hugging Face <strong><a href="https://www.linkedin.com/in/mariam-essam-ai-engineer/" class="dotted-link">MCP 1st Birthday</a></strong> Hackathon</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Worked on it with the talented <strong>Ai Developer <a href="https://www.linkedin.com/in/mariam-essam-ai-engineer/" class="dotted-link">Mariam Essam</a></strong></span><br>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+         <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">Social</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><a href="https://www.linkedin.com/posts/youkii-xr_mcpabr1stabrbirthday-huggingface-gradio-activity-7400855950632411136-n-q4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADSn0yMBo1MdVldbeoL5OxUZo2-CMJKUKOM" class="dotted-link">Gradio App - V2</a></span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><a href="https://www.linkedin.com/posts/mariam-essam-ai-engineer_productdevelopment-dataaugmentation-realtimeai-activity-7400635609570205696-a9JN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADSn0yMBo1MdVldbeoL5OxUZo2-CMJKUKOM" class="dotted-link">Mobile Camera Translation</a></span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><a href="https://www.linkedin.com/posts/youkii-xr_huggingface-mcp-ai-activity-7400474001891819520-tTa3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADSn0yMBo1MdVldbeoL5OxUZo2-CMJKUKOM" class="dotted-link">MCP Server</a></span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><a href="https://www.linkedin.com/posts/mariam-essam-ai-engineer_mcpabr1stabrbirthday-machinelearning-computervision-activity-7400193629241143296-1twY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADSn0yMBo1MdVldbeoL5OxUZo2-CMJKUKOM" class="dotted-link">Gradio App - V1</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">My Contributions</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>In just <strong>2 weeks</strong> I went from knowing nothing about MCP to making my first MCP server using <strong>Gradio</strong> and connecting it to <strong>Claude Desktop</strong></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>UI & UX: </strong>using <strong>Gradio</strong> and HTML injection</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Claude Desktop: </strong> doing the correct setup to ensure smooth integration with the server (it is not easy when you deal with images)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Learnt Hieroglyphics 101: </strong> to properly gather the training data, train model on the correct writing rules to ensure correct translation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">Features</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Hieroglyphs Detection and classification</strong> with <strong>High</strong> confidence</span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>MCP Server</strong>: connect it easily with <strong>Claude Desktop</strong> for a full pipeline</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Analytics</strong>: Heatmaps, Confidence Charts, Frequency Analysis</span>
+            </li>
+             <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span><strong>Digital Reference</strong> for supported <strong>Gardiner Codes</strong> with descriptions and transliteration</span>
+             </li>
+          </ul>
+        </div>
+      </div>
+
+<div class="timeline-section">
+  <div class="timeline-line">
+    <div class="timeline-pad"></div>
+  </div>
+  <div class="timeline-content">
+    <h2 class="text-2xl font-semibold mb-4">🔌 Available MCP Tools</h2>
+    
+    <!-- Tool 1: detect_glyphs -->
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-icon">🔍</span>
+        <span class="function-name">detect_glyphs</span>
+      </div>
+      <div class="code-content">
+        <ul>
+          <li>
+            <span class="code-label">Description:</span>
+            <span class="code-value">Scans an input image to find hieroglyphs.</span>
+          </li>
+          <li>
+            <span class="code-label">Returns:</span>
+            <span class="code-value">A path to the annotated image (boxes drawn) and a JSON object containing the list of found codes and confidence scores.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool 2: translate_story -->
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-icon">📜</span>
+        <span class="function-name">translate_story</span>
+      </div>
+      <div class="code-content">
+        <ul>
+          <li>
+            <span class="code-label">Description:</span>
+            <span class="code-value">Takes a list of Gardiner codes or keywords and interprets them.</span>
+          </li>
+          <li>
+            <span class="code-label">Returns:</span>
+            <span class="code-value">Two distinct texts: a <span class="code-string">"Mystical Story"</span> (creative interpretation) and an <span class="code-string">"Academic Translation"</span> (scientific interpretation).</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool 3: get_stats -->
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-icon">📊</span>
+        <span class="function-name">get_stats</span>
+      </div>
+      <div class="code-content">
+        <ul>
+          <li>
+            <span class="code-label">Description:</span>
+            <span class="code-value">Takes the detection data and generates visual reports.</span>
+          </li>
+          <li>
+            <span class="code-label">Returns:</span>
+            <span class="code-value">A path to an image file containing charts for Symbol Frequency, Confidence Levels, and Spatial Heatmaps.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool 4: list_codes -->
+    <div class="code-block">
+      <div class="code-header">
+        <span class="code-icon">📖</span>
+        <span class="function-name">list_codes</span>
+      </div>
+      <div class="code-content">
+        <ul>
+          <li>
+            <span class="code-label">Description:</span>
+            <span class="code-value">Provides access to the full internal database of Egyptian hieroglyphs.</span>
+          </li>
+          <li>
+            <span class="code-label">Returns:</span>
+            <span class="code-value">The complete dictionary of supported Gardiner codes, descriptions, and categories.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Versions -->
+<div class="timeline-section">
+  <div class="timeline-line">
+    <div class="timeline-pad"></div>
+  </div>
+
+  <div class="timeline-content">
+    <h2 class="text-2xl font-semibold mb-4">Behind The Scenes</h2>
+
+    <!-- Project Entry -->
+    <div class="mb-4">
+      <div class="flex items-center gap-3 mb-1">
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">Mobile Scan Translation:</h3>
+      </div>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/wZKBVYAZwZ4?si=4X1wWMSwzNuo_Twj"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+    </div>
+
+    
+    <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">Claude Desktop Integration:</h3>
+      </div>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/Vvlu6sDzsBE?si=RADqVMHmYR7nXurm"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+</div>
+
+  </section>
+  
+
+  <!-- Footer Include -->
+ <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-2 text-center">
+  <p class="text-sm">© 2025 Youkii — Built with ☕ and Passion</p>
+  <div class="flex items-center gap-4 text-xl">
+    <!-- icons or links -->
+  </div>
+</div>
+
+  <!-- JS -->
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
