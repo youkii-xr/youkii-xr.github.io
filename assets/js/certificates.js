@@ -48,7 +48,34 @@ const certificates = [
     image: "assets/images/certificates/ACC_VR_certificate-1.png",
     verifyLink: "",
   },
-   {
+
+  {
+    title: "Teens in Ai participation",
+    issuer: "teensinai & Guided",
+    date: "March 2021",
+    categories: ["AI", "participation"],
+    image: "assets/images/certificates/teens-in-ai-2021.jpg",
+    verifyLink: "",
+  },
+
+  {
+    title: "Teens in Ai 2nd place award",
+    issuer: "teensinai & Guided",
+    date: "March 2021",
+    categories: ["AI"],
+    image: "assets/images/certificates/teens-in-ai-award.png",
+    verifyLink: "",
+  },
+  {
+    title: "Helwan Station Volunteer",
+    issuer: "Helwan Station Student Activity - Helwan Engineering",
+    date: "Sep 2022",
+    categories: ["Volunteering"],
+    image: "assets/images/certificates/helwan_station.jpg",
+    verifyLink: "",
+  },
+
+  {
     title: "Introduction to AutoCAD",
     issuer: "AutoDesk",
     date: "July 2021",
