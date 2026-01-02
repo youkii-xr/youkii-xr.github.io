@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    // Early theme application before page render to prevent flicker
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rosetta Decoder">
+  <meta name="author" content="Youkii">
+  <title>Cross-platform Unity PPT plugin</title>
+
+  <link rel="icon" type="image/x-icon" href="../assets/images/projects/thumbnails/PPT-XR.png">
+
+  <!-- Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="bg-[#fef8ec] dark:bg-[#2c2621] text-brown-800 dark:text-[#e8dccf]">
+  <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-[#fdf6ec] dark:bg-[#2a1f1a] transition-opacity duration-500">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-icon">
+        🐾 <!-- or ✦ or 🔆 or 🌀 -->
+      </div>
+    </div>
+  </div>
+  <!-- Navbar Include -->
+  <header class="sticky top-0 z-50 bg-[#fef8ec] dark:bg-[#2c2621] shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="../index.html#about" class="text-2xl font-bold">Youkii</a>
+      <div class="hidden md:flex items-center gap-6 font-medium">
+        <nav class="flex space-x-6">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../contact.html" class ="nav-link">Contact</a>
+        </nav>
+<button id="toggleTheme" class="theme-toggle p-2 rounded-full ml-2">🌓</button>
+      </div>
+      <div class="md:hidden flex items-center gap-3">
+        <button id="nav-toggle" class="focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+<button id="toggleThemeMobile" class="theme-toggle p-2 rounded-full order-2">🌓</button>      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col items-start space-y-3 pb-6 px-6 font-medium">
+      <a href="../index.html" class="nav-link">Home</a>
+          <a href="../contact.html" class ="nav-link">Contact</a>
+    </div>
+  </header>
+
+  <section class="px-6 py-12 max-w-5xl mx-auto">
+    <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Cross-platform Unity PPT Plugin</h1>
+  
+    <!-- Video -->
+    <div class="w-full rounded-lg overflow-hidden shadow-lg mb-6" style="height: 350px;">
+      <iframe src="https://www.youtube.com/embed/cbLUE_XlzWY?si=5NwVeultrCvWxIQx" title="Project Video" allowfullscreen class="w-full h-full"></iframe>
+    </div>
+  
+    <!-- Tags -->
+    <div class="mb-6 flex flex-wrap gap-2 justify-center">
+      <span class="tag-label">Plugin</span>
+      <span class="tag-label">Cross-platform</span>
+      <span class="tag-label">Unity</span>
+    </div>
+  
+  
+    <!-- Timeline Sections -->
+    <div class="space-y-16">
+  
+  
+      <!-- About -->
+      <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">About</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Project goal was to discover and research different approaches to display <strong>PowerPoint Presentations</strong> in Unity and develop a cross-platform easy to use plugin</span>
+            </li>
+              <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+                <span>Managed to deliver 2 versions:<br>
+                <strong>cross-platform PDF presentation plugin</strong>: upload your pdf it auto splits and displays in presentation format, works with any platform from WebGL to VR<br>
+                <strong>Interaction PPTX plugin:</strong> that maps powerpoint elements to Unity UI system enabling support for animations, transitions and much more flexibility
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+         <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">What I learnt</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Project required understanding <strong>PowerPoint raw XML structure</strong> beyond APIs: relationships, themes, layers, document hierarchies<br></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Managed to Decode and extra slide backgrounds, text data, embedded images and successfully mapped them to Unity UI</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>Worked with DLL bridges, native plugins and ensured smooth integration without issues</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>This project took a lot of <strong>creative problem-solving</strong> and thinking out of the box trying out different approaches</span>
+            </li>  
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>File access read/write in different platforms (android, webgl, PC) and overcame the challenges of each</span>
+            </li>  
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <div class="timeline-line">
+          <div class="timeline-pad"></div>
+        </div>
+        <div class="timeline-content">
+          <h2 class="text-2xl font-semibold mb-4">Delivery</h2>
+          <ul class="space-y-3 list-none">
+            <li class="flex items-start gap-3">
+              <div class="timeline-dot"></div>
+              <span>I delivered part of this project as a <strong>well-documented plugin</strong> to a client, with exposed interface to directly use without worrying about underlying logic</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<!-- Versions -->
+<div class="timeline-section">
+  <div class="timeline-line">
+    <div class="timeline-pad"></div>
+  </div>
+
+  <div class="timeline-content">
+    <h2 class="text-2xl font-semibold mb-4">Behind The Scenes</h2>
+
+    <!-- Project Entry -->
+    <div class="mb-4">
+      <div class="flex items-center gap-3 mb-1">
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">How it started:</h3>
+      </div>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/npo4OSPD7Cw?si=J3y1E5BrpmaAzEGk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+    </div>
+
+    
+    <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">Powerpoint-to-Unity UI mapping</h3>
+      </div>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/nGvNpPFFH3M?si=-WqMxkX-sMkuJ6zs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+
+      <div class="mb-4">
+      <!-- Subheading + Dot Row -->
+      <div class="flex items-center gap-3 mb-1">
+        <div class="timeline-dot"></div>
+        <h3 class="text-lg font-semibold">Standalone VR test</h3>
+      </div>
+      <!-- Video -->
+      <div class="w-full max-w-xl rounded-lg overflow-hidden shadow-lg ml-7">
+        <iframe
+        class="w-full h-64"
+        src="https://www.youtube.com/embed/9U71-rNpBpI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>  
+    </div>
+</div>
+
+  </section>
+  
+
+  <!-- Footer Include -->
+ <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-2 text-center">
+  <p class="text-sm">© 2025 Youkii — Built with ☕ and Passion</p>
+  <div class="flex items-center gap-4 text-xl">
+    <!-- icons or links -->
+  </div>
+</div>
+
+  <!-- JS -->
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
