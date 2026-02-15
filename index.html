@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    // Early theme application before page render to prevent flicker
-    (function () {
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    })();
-  </script>
-  
+<script>
+  // Early theme application before page render to prevent flicker
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+</script>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,8 +26,10 @@
   <link rel="icon" type="image/x-icon" href="assets/images/youkii.png">
 
 </head>
+
 <body>
-  <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-[#fdf6ec] dark:bg-[#2a1f1a] transition-opacity duration-500">
+  <div id="loader"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-[#fdf6ec] dark:bg-[#2a1f1a] transition-opacity duration-500">
     <div class="loader-inner">
       <div class="loader-ring"></div>
       <div class="loader-icon">
@@ -40,7 +42,7 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
       <a href="#about" class="text-2xl font-bold text-brown-800 dark:text-[#e8dccf]">Youkii</a>
-  
+
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-6 text-brown-800 dark:text-[#e8dccf] font-medium">
         <nav class="flex space-x-6">
@@ -55,23 +57,24 @@
           <a href="contact.html" class="nav-link">Contact</a>
         </nav>
         <!-- Theme Toggle -->
-<button id="toggleTheme" class="theme-toggle p-2 rounded-full ml-2">🌓</button>
+        <button id="toggleTheme" class="theme-toggle p-2 rounded-full ml-2">🌓</button>
       </div>
-  
+
       <!-- Mobile Nav -->
       <div class="md:hidden flex items-center gap-3">
         <button id="nav-toggle" class="focus:outline-none order-1">
           <svg class="w-7 h-7 text-brown-800 dark:text-[#e8dccf]" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-      <button id="toggleThemeMobile" class="theme-toggle p-2 rounded-full order-2">🌓</button>
+        <button id="toggleThemeMobile" class="theme-toggle p-2 rounded-full order-2">🌓</button>
       </div>
     </div>
-  
+
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden flex flex-col items-start space-y-3 pb-6 px-6 text-brown-800 dark:text-[#e8dccf] font-medium">
+    <div id="mobile-menu"
+      class="md:hidden hidden flex flex-col items-start space-y-3 pb-6 px-6 text-brown-800 dark:text-[#e8dccf] font-medium">
       <a href="#about" class="nav-link">About</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#services" class="nav-link">Services</a>
@@ -83,10 +86,11 @@
       <a href="contact.html" class="nav-link">Contact</a>
     </div>
   </header>
-  
+
 
   <!-- Hero / About Me Section -->
-  <section id="about" class="py-8 flex flex-col-reverse md:flex-row items-center justify-center px-6 text-center md:text-left">
+  <section id="about"
+    class="py-8 flex flex-col-reverse md:flex-row items-center justify-center px-6 text-center md:text-left">
     <div class="max-w-xl md:max-w-2xl lg:max-w-4xl space-y-6 flex-shrink-0 min-w-0">
       <h1 class="text-4xl md:text-6xl font-bold leading-tight">
         <div class="mb-5">Hey, I am Salma</div>
@@ -95,25 +99,25 @@
           <span class="invisible text-yellow-500 text-4xl md:text-6xl font-bold block">
             a Curious Coder
           </span>
-        
+
           <!-- Animated text -->
-          <span
-            id="typewriter"
-            class="absolute inset-0 text-yellow-500 text-4xl md:text-6xl font-bold block whitespace-nowrap"
-          ></span>
-        </div>        
+          <span id="typewriter"
+            class="absolute inset-0 text-yellow-500 text-4xl md:text-6xl font-bold block whitespace-nowrap"></span>
+        </div>
       </h1>
-      
+
       <p class="text-lg md:text-xl">
-        After hustling with embedded systems, AI, web dev,<br>coding in C++, python and even assembly (and many other languages).
+        After hustling with embedded systems, AI, web dev,<br>coding in C++, python and even assembly (and many other
+        languages).
         <br><b>I finally found my passion in VR</b><br>
-        I started in 2022 with Unity and since then I’ve played around with everything from simple VR apps to MR features on both Quest 2 and 3
+        I started in 2022 with Unity and since then I’ve played around with everything from simple VR apps to MR
+        features on both Quest 2 and 3
       </p>
     </div>
     <div class="mb-8 md:mb-0">
       <div class="cat-container relative w-48 md:w-64 mx-auto">
         <img src="assets/images/youkii.png" alt="My Avatar" class="w-full rounded-full shadow-lg" />
-  
+
   </section>
 
   <!-- Social Links Section -->
@@ -121,58 +125,58 @@
     <h2 class="text-3xl md:text-4xl font-bold mb-8">Connect With Me</h2>
     <div class="flex flex-wrap justify-center gap-6">
 
-            <a href="https://github.com/youkii-xr" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#181717] btn-dark-custom hover:bg-[#24292e] transition">
-      <i class="fab fa-github social-icon"></i> GitHub
+      <a href="https://github.com/youkii-xr" target="_blank"
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#181717] btn-dark-custom hover:bg-[#24292e] transition">
+        <i class="fab fa-github social-icon"></i> GitHub
       </a>
 
-            <a href="https://www.threads.net/@youkii_xr" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#000] btn-dark-custom hover:bg-[#333] transition">
-      <i class="fas fa-at social-icon"></i> Threads
+      <a href="https://www.threads.net/@youkii_xr" target="_blank"
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#000] btn-dark-custom hover:bg-[#333] transition">
+        <i class="fas fa-at social-icon"></i> Threads
       </a>
 
       <a href="https://www.youtube.com/@Youkii-XR" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#ff0000] btn-dark-custom hover:bg-[#cc0000] transition">
-      <i class="fab fa-youtube social-icon"></i> YouTube
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#ff0000] btn-dark-custom hover:bg-[#cc0000] transition">
+        <i class="fab fa-youtube social-icon"></i> YouTube
       </a>
 
 
 
       <a href="https://www.linkedin.com/in/youkii-xr/" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#0077b5] btn-dark-custom hover:bg-[#005885] transition">
-      <i class="fab fa-linkedin social-icon"></i> LinkedIn
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#0077b5] btn-dark-custom hover:bg-[#005885] transition">
+        <i class="fab fa-linkedin social-icon"></i> LinkedIn
       </a>
 
       <a href="blog.html" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
-      <i class="fas fa-blog social-icon"></i> Blog
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
+        <i class="fas fa-blog social-icon"></i> Blog
       </a>
 
       <a href="https://discord.gg/sfHNaMS8" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
-      <i class="fab fa-discord social-icon"></i> Discord
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
+        <i class="fab fa-discord social-icon"></i> Discord
       </a>
 
       <a href="gallery.html" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
-      <i class="fas fa-images social-icon"></i> Gallery
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
+        <i class="fas fa-images social-icon"></i> Gallery
       </a>
 
       <a href="certificates.html" target="_blank"
-      class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
-      <i class="fas fa-award social-icon"></i> Certificates
+        class="social-button px-6 py-3 rounded-full font-semibold shadow-md bg-[#e8c674] btn-dark-custom hover:bg-yellow-400 dark:hover:bg-yellow-500 transition">
+        <i class="fas fa-award social-icon"></i> Certificates
       </a>
 
     </div>
   </section>
 
-<!--Tools & skills sections-->
-<section id="skills" class="py-16 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
-  <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-brown-800 dark:text-[#e8dccf]">
-    Skills
-  </h2>
+  <!--Tools & skills sections-->
+  <section id="skills" class="py-16 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-brown-800 dark:text-[#e8dccf]">
+      Skills
+    </h2>
 
-  <div class="max-w-5xl mx-auto space-y-10">
+    <div class="max-w-5xl mx-auto space-y-10">
       <!-- Sub-Category: Programming -->
       <div>
         <h3 class="text-xl font-semibold mb-4 text-brown-700 dark:text-[#e8dccf]">Programming</h3>
@@ -242,8 +246,8 @@
             </div>
           </div>
 
-        </div> 
-      </div> 
+        </div>
+      </div>
 
       <!-- Sub-Category: XR -->
       <div>
@@ -251,15 +255,17 @@
         <div class="flex flex-wrap gap-4">
           <!-- Skill slot -->
           <div class="skill-slot relative group">
-            <img src="assets/images/skills/xr/xr-interaction-toolkit.png" alt="XR Interaction Toolkit" class="h-10 object-contain" />
+            <img src="assets/images/skills/xr/xr-interaction-toolkit.png" alt="XR Interaction Toolkit"
+              class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
               XR Interaction Toolkit
             </div>
           </div>
 
-           <div class="skill-slot relative group">
-            <img src="assets/images/skills/xr/openxr.png" alt="OpenXR Interaction Toolkit" class="h-10 object-contain" />
+          <div class="skill-slot relative group">
+            <img src="assets/images/skills/xr/openxr.png" alt="OpenXR Interaction Toolkit"
+              class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
               OpenXR
@@ -267,7 +273,8 @@
           </div>
 
           <div class="skill-slot relative group">
-            <img src="assets/images/skills/xr/meta.png" alt="Meta SDK (Oculus Integration)" class="h-10 object-contain" />
+            <img src="assets/images/skills/xr/meta.png" alt="Meta SDK (Oculus Integration)"
+              class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
               Meta SDK (Oculus Integration)
@@ -298,7 +305,7 @@
             </div>
           </div>
 
-             <div class="skill-slot relative group">
+          <div class="skill-slot relative group">
             <img src="assets/images/skills/xr/mrtk.png" alt="autohand" class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
@@ -306,8 +313,8 @@
             </div>
           </div>
 
-        </div> 
-      </div> 
+        </div>
+      </div>
 
       <!-- Sub-Category: Engines & Frameworks -->
       <div>
@@ -354,7 +361,7 @@
             </div>
           </div>
 
-           <div class="skill-slot relative group">
+          <div class="skill-slot relative group">
             <img src="assets/images/skills/Engines/cesium.png" alt="Cesium" class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
@@ -362,10 +369,10 @@
             </div>
           </div>
 
-        </div> 
-      </div> 
+        </div>
+      </div>
 
-        <!-- Sub-Category: Ai Integration -->
+      <!-- Sub-Category: Ai Integration -->
       <div>
         <h3 class="text-xl font-semibold mb-4 text-brown-700 dark:text-[#e8dccf]">Ai integrations</h3>
         <div class="flex flex-wrap gap-4">
@@ -386,12 +393,12 @@
             </div>
           </div>
 
-        </div> 
-      </div> 
+        </div>
+      </div>
 
 
-       <!-- Sub-Category: Hardware -->
-       <div>
+      <!-- Sub-Category: Hardware -->
+      <div>
         <h3 class="text-xl font-semibold mb-4 text-brown-700 dark:text-[#e8dccf]">Hardware & Simulation</h3>
         <div class="flex flex-wrap gap-4">
           <!-- Skill slot -->
@@ -460,14 +467,15 @@
           </div>
 
           <div class="skill-slot relative group">
-            <img src="assets/images/skills/hardware/packet_tracer.png" alt="Packet Tracer" class="h-10 object-contain" />
+            <img src="assets/images/skills/hardware/packet_tracer.png" alt="Packet Tracer"
+              class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
               Packet Tracer
             </div>
           </div>
 
-           <div class="skill-slot relative group">
+          <div class="skill-slot relative group">
             <img src="assets/images/skills/hardware/wireshark.png" alt="Wire Shark" class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
@@ -475,11 +483,11 @@
             </div>
           </div>
 
-        </div> 
+        </div>
       </div>
-      
-       <!-- Sub-Category: Other -->
-       <div>
+
+      <!-- Sub-Category: Other -->
+      <div>
         <h3 class="text-xl font-semibold mb-4 text-brown-700 dark:text-[#e8dccf]">Others</h3>
         <div class="flex flex-wrap gap-4">
           <!-- Skill slot -->
@@ -515,7 +523,7 @@
             </div>
           </div>
 
-           <div class="skill-slot relative group">
+          <div class="skill-slot relative group">
             <img src="assets/images/skills/other/linux.png" alt="Linux" class="h-10 object-contain" />
             <!-- Tooltip -->
             <div class="tooltip-skill group-hover:opacity-100 group-hover:translate-y-1">
@@ -524,394 +532,432 @@
           </div>
 
 
-        </div> 
-      </div> 
-
-  </div>
-</section>
-
-<!-- Services -->
-<section id="services" class="mt-[-40px] pb-16 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
-  <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-brown-800 dark:text-[#e8dccf]">
-    What I Do ✨
-  </h2>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-     <!-- XR Apps - Tooltip -->
-    <div class="relative group service-card">
-      <img src="assets/images/icons/xr.png" alt="XR" class="w-12 h-12 mb-2" />
-      <span class="service-label">XR Apps</span>
-
-      <!-- Tooltip -->
-      <div class="tooltip group-hover:opacity-100">
-        I build immersive XR experiences that transport users to new realities — whether for learning, gaming, or pure wonder
+        </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="mt-[-40px] pb-16 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-brown-800 dark:text-[#e8dccf]">
+      What I Do ✨
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <!-- XR Apps - Tooltip -->
+      <div class="relative group service-card">
+        <img src="assets/images/icons/xr.png" alt="XR" class="w-12 h-12 mb-2" />
+        <span class="service-label">XR Apps</span>
+
+        <!-- Tooltip -->
+        <div class="tooltip group-hover:opacity-100">
+          I build immersive XR experiences that transport users to new realities — whether for learning, gaming, or pure
+          wonder
+        </div>
+      </div>
+
+      <!-- Service: WebXR -->
+      <div class="relative group service-card">
+        <img src="assets/images/icons/web-xr.png" alt="WebXR" class="w-12 h-12 mb-2" />
+        <span class="service-label">WebXR</span>
+        <!-- Tooltip -->
+        <div class="tooltip group-hover:opacity-100">
+          No downloads needed! I create XR experiences that run right in your browser – fast, sleek, and headset-ready
+        </div>
+      </div>
+
+      <!-- Service: Games -->
+      <div class="relative group service-card">
+        <img src="assets/images/icons/games.png" alt="Games" class="w-12 h-12 mb-2" />
+        <span class="service-label">Games</span>
+        <!-- Tooltip -->
+        <div class="tooltip group-hover:opacity-100">
+          From cozy puzzles to intense VR challenges, I design and develop games that are fun, polished, and replayable.
+        </div>
+      </div>
+
+      <!-- Service: Tools & Systems -->
+      <div id="tools" class="relative group service-card">
+        <img src="assets/images/icons/tools.png" alt="Tools & Systems" class="w-12 h-12 mb-2" />
+        <span class="service-label">Tools & Systems</span>
+        <!-- Tooltip -->
+        <div class="tooltip group-hover:opacity-100">
+          I craft custom tools and backend systems to make development easier, workflows smoother, and teams happier.
+        </div>
+      </div>
+
+      <!-- Service: Custom XR Interactions -->
+      <div class="relative group service-card">
+        <img src="assets/images/icons/custom-xr-interactions.png" alt="Custom XR Interactions" class="w-12 h-12 mb-2" />
+        <span class="service-label">Custom XR Interactions</span>
+        <!-- Tooltip -->
+        <div class="tooltip group-hover:opacity-100">
+          Need a gesture to cast a spell? Or a realistic grab? I design intuitive interactions that feel natural and
+          magical.
+        </div>
+      </div>
+
+      <!-- Service: Unity Apps -->
+      <div class="relative group service-card">
+        <img src="assets/images/icons/unity.png" alt="Unity Apps" class="w-12 h-12 mb-2" />
+        <span class="service-label">Unity Apps</span>
+        <!-- Tooltip -->
+        <div class="tooltip group-hover:opacity-100">
+          I use Unity to build high-performance apps for desktop, mobile, and standalone headsets – tailored to your
+          needs.
+        </div>
+      </div>
+
     </div>
 
-    <!-- Service: WebXR -->
-    <div class="relative group service-card">
-      <img src="assets/images/icons/web-xr.png" alt="WebXR" class="w-12 h-12 mb-2" />
-      <span class="service-label">WebXR</span>
-      <!-- Tooltip -->
-      <div class="tooltip group-hover:opacity-100">
-        	No downloads needed! I create XR experiences that run right in your browser – fast, sleek, and headset-ready
-      </div>
+    <!-- Call to Action Buttons -->
+    <div class="flex flex-wrap justify-center gap-6 mt-12 max-w-5xl mx-auto">
+      <a href="#request-service"
+        class="cta-button px-8 py-4 rounded-full font-semibold shadow-md bg-[#fcefdc] dark:bg-[#5c4537] border-2 border-[#c4a489] dark:border-[#8d7562] text-[#5e4b41] dark:text-[#e8dccf] hover:bg-[#e0a96d] dark:hover:bg-[#c4a489] hover:text-white hover:border-[#e0a96d] dark:hover:border-[#c4a489] transition-all transform hover:scale-105 hover:shadow-lg">
+        <i class="fas fa-paper-plane mr-2"></i>Request Service
+      </a>
+      <a href="#free-consultation"
+        class="cta-button px-8 py-4 rounded-full font-semibold shadow-md bg-[#fcefdc] dark:bg-[#5c4537] border-2 border-[#c4a489] dark:border-[#8d7562] text-[#5e4b41] dark:text-[#e8dccf] hover:bg-[#e0a96d] dark:hover:bg-[#c4a489] hover:text-white hover:border-[#e0a96d] dark:hover:border-[#c4a489] transition-all transform hover:scale-105 hover:shadow-lg">
+        <i class="fas fa-calendar-check mr-2"></i>Free Consultation
+      </a>
     </div>
+  </section>
 
-    <!-- Service: Games -->
-    <div class="relative group service-card">
-      <img src="assets/images/icons/games.png" alt="Games" class="w-12 h-12 mb-2" />
-      <span class="service-label">Games</span>
-      <!-- Tooltip -->
-      <div class="tooltip group-hover:opacity-100">
-        From cozy puzzles to intense VR challenges, I design and develop games that are fun, polished, and replayable.
-      </div>
-    </div>
-
-     <!-- Service: Tools & Systems -->
-    <div id="tools" class="relative group service-card">
-      <img src="assets/images/icons/tools.png" alt="Tools & Systems" class="w-12 h-12 mb-2" />
-      <span class="service-label">Tools & Systems</span>
-      <!-- Tooltip -->
-      <div class="tooltip group-hover:opacity-100">
-        I craft custom tools and backend systems to make development easier, workflows smoother, and teams happier.
-      </div>
-    </div>
-
-    <!-- Service: Custom XR Interactions -->
-    <div class="relative group service-card">
-      <img src="assets/images/icons/custom-xr-interactions.png" alt="Custom XR Interactions" class="w-12 h-12 mb-2" />
-      <span class="service-label">Custom XR Interactions</span>
-      <!-- Tooltip -->
-      <div class="tooltip group-hover:opacity-100">
-        Need a gesture to cast a spell? Or a realistic grab? I design intuitive interactions that feel natural and magical.
-      </div>
-    </div>
-
-    <!-- Service: Unity Apps -->
-    <div class="relative group service-card">
-      <img src="assets/images/icons/unity.png" alt="Unity Apps" class="w-12 h-12 mb-2" />
-      <span class="service-label">Unity Apps</span>
-      <!-- Tooltip -->
-      <div class="tooltip group-hover:opacity-100">
-        I use Unity to build high-performance apps for desktop, mobile, and standalone headsets – tailored to your needs.
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Open Source Tools -->
-<section class="pt-10 pb-4 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
-  <div class="flex justify-center items-center gap-4 mb-12 flex-wrap">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">My Open Source Tools</h2>
-    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+  <!-- Open Source Tools -->
+  <section class="pt-10 pb-4 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
+    <div class="flex justify-center items-center gap-4 mb-12 flex-wrap">
+      <h2 class="text-3xl md:text-4xl font-bold text-center">My Open Source Tools</h2>
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
       <script type='text/javascript'>
         kofiwidget2.init('Support me on Ko-fi', '#fcbf47', 'Y8Y81DT7HM');
         kofiwidget2.draw();
       </script>
-  </div>
-  
-  <div class="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
-    
-    <a href="https://github.com/youkii-xr" target="_blank" class="tool-card relative">
-      <span>Asset Bundle Builder</span>
-    </a>
-
-  </div>
-</section>
-
-
-<!-- projects catalog-->
-<section id="portfolio" class="py-16 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
-  <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-brown-800 dark:text-[#e8dccf]">My Projects</h2>
-
-  <!-- Category Filters -->
-  <div class="flex flex-wrap justify-center gap-4 mb-10">
-    <button class="filter-btn active" data-category="all">All</button>
-    <button class="filter-btn" data-category="xr">XR</button>
-    <button class="filter-btn" data-category="hardware">Hardware</button>
-    <button class="filter-btn" data-category="college">College</button>
-    <button class="filter-btn" data-category="digital-heritage">Digital heritage</button>
-  </div>
-
- <!-- Project Gallery -->
-<div id="project-gallery" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-  <!-- Project Card -->
-  <div class="project-card" data-category="xr unity">
-    <a href="PDP/Pieceful-Moments.html">
-    <img class="project-thumb object-center"  src="assets/images/projects/thumbnails/piecefulmoments.png" alt="River Project" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Pieceful Moments</h3>
-      <p class="project-tags">XR, Unity, Game</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
     </div>
-  </div>
 
-   <div class="project-card" data-category="xr digital-heritage">
-    <a href="PDP/River-People.html">
-    <img class="project-thumb object-center"  src="assets/images/projects/thumbnails/RiverPeople.png" alt="River Project" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">River People</h3>
-      <p class="project-tags">XR, Unity, Digital Heritage</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+    <div class="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
+
+      <a href="https://github.com/youkii-xr" target="_blank" class="tool-card relative">
+        <span>Asset Bundle Builder</span>
+      </a>
+
     </div>
-  </div>
+  </section>
+
+
+  <!-- projects catalog-->
+  <section id="portfolio" class="py-16 px-6 bg-[#fef8ec] dark:bg-[#2c2621]">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-brown-800 dark:text-[#e8dccf]">My Projects</h2>
+
+    <!-- Category Filters -->
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="xr">XR</button>
+      <button class="filter-btn" data-category="hardware">Hardware</button>
+      <button class="filter-btn" data-category="college">College</button>
+      <button class="filter-btn" data-category="digital-heritage">Digital heritage</button>
+    </div>
+
+    <!-- Project Gallery -->
+    <div id="project-gallery" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <!-- Project Card -->
+      <div class="project-card" data-category="xr unity">
+        <a href="PDP/Pieceful-Moments.html">
+          <img class="project-thumb object-center" src="assets/images/projects/thumbnails/piecefulmoments.png"
+            alt="River Project" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Pieceful Moments</h3>
+          <p class="project-tags">XR, Unity, Game</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+
+      <div class="project-card" data-category="xr digital-heritage">
+        <a href="PDP/River-People.html">
+          <img class="project-thumb object-center" src="assets/images/projects/thumbnails/RiverPeople.png"
+            alt="River Project" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">River People</h3>
+          <p class="project-tags">XR, Unity, Digital Heritage</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
       <div class="project-card" data-category="XR digital-heritage">
-    <a href="PDP/The-Lost-Language.html">
-    <img class="project-thumb object-center"  src="assets/images/projects/thumbnails/The_Lost_Language.png" alt="The Lost Language" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">The Lost Language</h3>
-      <p class="project-tags">XR, Game, Digital Heritage</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  
-   <div class="project-card" data-category="XR">
-    <a href="PDP/Rosetta-Decorder.html">
-    <img class="project-thumb object-center"  src="assets/images/projects/thumbnails/rosetta-decoder.png" alt="Rosetta Decoder" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Rosetta Decoder</h3>
-      <p class="project-tags">Ai, Digital Heritage</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
+        <a href="PDP/The-Lost-Language.html">
+          <img class="project-thumb object-center" src="assets/images/projects/thumbnails/The_Lost_Language.png"
+            alt="The Lost Language" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">The Lost Language</h3>
+          <p class="project-tags">XR, Game, Digital Heritage</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
-  <div class="project-card" data-category="digital-heritage">
-    <a href="PDP/Dahab-3d-Scann.html">
-    <img src="assets/images/projects/thumbnails/dahaab3dScan.png" alt="Dahab 3d Scan" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Dahab 3D Scan</h3>
-      <p class="project-tags">Unity, Digital Heritage</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
+      <div class="project-card" data-category="XR">
+        <a href="PDP/Rosetta-Decorder.html">
+          <img class="project-thumb object-center" src="assets/images/projects/thumbnails/rosetta-decoder.png"
+            alt="Rosetta Decoder" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Rosetta Decoder</h3>
+          <p class="project-tags">Ai, Digital Heritage</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
-  
-  <div class="project-card" data-category="xr">
-    <a href="PDP/Electronics-Simulator.html">
-    <img src="assets/images/projects/thumbnails/electronicsSimulatorImage.PNG" alt="Electronics Simulator" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Electronics Simulator</h3>
-      <p class="project-tags">XR, Unity, Educational</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-
-    <div class="project-card" data-category="xr">
-    <a href="PDP/Cricles.html">
-    <img src="assets/images/projects/thumbnails/circles_favIcon.PNG" alt="Circles" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Circles</h3>
-      <p class="project-tags">XR, Unity, Storytelling</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
+      <div class="project-card" data-category="digital-heritage">
+        <a href="PDP/Dahab-3d-Scann.html">
+          <img src="assets/images/projects/thumbnails/dahaab3dScan.png" alt="Dahab 3d Scan" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Dahab 3D Scan</h3>
+          <p class="project-tags">Unity, Digital Heritage</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
 
-  <div class="project-card" data-category="xr">
-    <a href="PDP/Custom-Beat-Saber-Mode.html">
-    <img src="assets/images/projects/thumbnails/CustomBeatSaberMode.png" alt="Custom Beat Saber Mode" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Custom Beat Saber Mode</h3>
-      <p class="project-tags">XR, Unity, Modding</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
+      <div class="project-card" data-category="xr">
+        <a href="PDP/Electronics-Simulator.html">
+          <img src="assets/images/projects/thumbnails/electronicsSimulatorImage.PNG" alt="Electronics Simulator"
+            class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Electronics Simulator</h3>
+          <p class="project-tags">XR, Unity, Educational</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+
+      <div class="project-card" data-category="xr">
+        <a href="PDP/Cricles.html">
+          <img src="assets/images/projects/thumbnails/circles_favIcon.PNG" alt="Circles" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Circles</h3>
+          <p class="project-tags">XR, Unity, Storytelling</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+
+
+      <div class="project-card" data-category="xr">
+        <a href="PDP/Custom-Beat-Saber-Mode.html">
+          <img src="assets/images/projects/thumbnails/CustomBeatSaberMode.png" alt="Custom Beat Saber Mode"
+            class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Custom Beat Saber Mode</h3>
+          <p class="project-tags">XR, Unity, Modding</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
 
 
-  <div class="project-card" data-category="xr">
-    <a href="PDP/VR-Autism_Hygiene.html">
-    <img src="assets/images/projects/thumbnails/VRAutism.png" alt="VR Autism" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">VR Autism Hygiene</h3>
-      <p class="project-tags">XR, Unity, Educational</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  
-  <div class="project-card" data-category="xr hardware">
-    <a href="PDP/Relax-VR.html">
-    <img src="assets/images/projects/thumbnails/PolarH10Demo.png" alt="Relax VR" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Relax VR</h3>
-      <p class="project-tags">XR, Unity, Hardware</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
+      <div class="project-card" data-category="xr">
+        <a href="PDP/VR-Autism_Hygiene.html">
+          <img src="assets/images/projects/thumbnails/VRAutism.png" alt="VR Autism" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">VR Autism Hygiene</h3>
+          <p class="project-tags">XR, Unity, Educational</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
-    <div class="project-card" data-category="college hardware">
-    <a href="PDP/analog-PID-controller.html">
-    <img src="assets/images/projects/thumbnails/analog-pid-controller.png" alt="Analog PID Controller" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Analog PID Controller</h3>
-      <p class="project-tags">College, Hardware</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
+      <div class="project-card" data-category="xr hardware">
+        <a href="PDP/Relax-VR.html">
+          <img src="assets/images/projects/thumbnails/PolarH10Demo.png" alt="Relax VR" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Relax VR</h3>
+          <p class="project-tags">XR, Unity, Hardware</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
-  <div class="project-card" data-category="">
-    <a href="PDP/AI-Avatar.html">
-    <img src="assets/images/projects/thumbnails/AiAvatar_thumbnail.png" alt="AI Avatar" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">AI Avatar</h3>
-      <p class="project-tags">Unity</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="xr">
-    <a href="PDP/Beat-Saber-Clone.html">
-    <img src="assets/images/projects/thumbnails/beatSaberCloneImage.PNG" alt="Beat Saber Clone" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Beat Saber Clone</h3>
-      <p class="project-tags">XR, Unity, Game</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="">
-    <a href="PDP/Hypercasual-games.html">
-    <img src="assets/images/projects/thumbnails/hypercasualGames.png" alt="Hyper Casual Games" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Hypercasual Games</h3>
-      <p class="project-tags">Unity, Mobile Game</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="">
-    <a href="PDP/Quran-Model.html">
-    <img src="assets/images/projects/thumbnails/QM_final_Product2.png" alt="Quran 3d Model" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Quran Model</h3>
-      <p class="project-tags">Modelling</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="XR">
-    <a href="PDP/Kitchen-Chaos-VR.html">
-    <img src="assets/images/projects/thumbnails/KitchenChaosLogo.png" alt="Kitchen Chaos" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Kitchen Chaos VR</h3>
-      <p class="project-tags">XR, Unity, Game</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="">
-    <a href="PDP/CPingPong.html">
-    <img src="assets/images/projects/thumbnails/ping_pong_c.png" alt="c ping pong" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">C Ping Pong</h3>
-      <p class="project-tags">C, no game engine</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="hardware">
-    <a href="PDP/Robot-Hand.html">
-    <img src="assets/images/projects/thumbnails/robotHand.png" alt="robot hand" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Recycled Robot Hand</h3>
-      <p class="project-tags">Recyling, Hardware</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="">
-    <a href="PDP/360HelwanCollege.html">
-    <img src="assets/images/projects/thumbnails/helwanEngineering.png" alt="360 tour helwan engineering" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">360 tour helwan engineering</h3>
-      <p class="project-tags">360 tour</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="">
-    <a href="PDP/4Cards.html">
-    <img src="assets/images/projects/thumbnails/4cards.png" alt="4 cards" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">4 cards</h3>
-      <p class="project-tags">Unity, Mobile Game</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="college">
-    <a href="PDP/ARCADE.html">
-    <img src="assets/images/projects/thumbnails/ARCADE.png" alt="arcade" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">ARCADE</h3>
-      <p class="project-tags">C++, Console, College</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="college">
-    <a href="PDP/JavaNoteApp.html">
-    <img src="assets/images/projects/thumbnails/JavaNoteApp.png" alt="java Note App" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">Java Note App</h3>
-      <p class="project-tags">Java, College</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="hardware">
-    <a href="PDP/HS-AVR-Drivers.html">
-    <img src="assets/images/projects/thumbnails/HS.png" alt="AVR Drivers" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">AVR Drivers</h3>
-      <p class="project-tags">Hardware
-      </p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <div class="project-card" data-category="college hardware">
-    <a href="PDP/FPGS-ShiftRegister.html">
-    <img src="assets/images/projects/thumbnails/FPGA.png" alt="FPGA Shift Register" class="project-thumb" />
-  </a>
-    <div class="project-info">
-      <h3 class="project-title">FPGA Shift Register</h3>
-      <p class="project-tags">Hardware</p>
-      <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
-    </div>
-  </div>
-  <!-- More projects... -->
-</div>
-<!-- No projects message -->
-<p id="no-projects" class="hidden text-center text-brown-800 dark:text-[#e8dccf] text-lg mt-6">
-  No projects found for this category.
-</p>
-</section>
+      <div class="project-card" data-category="xr">
+        <a href="PDP/PPT-Plugin.html">
+          <img src="assets/images/projects/thumbnails/PPT-XR.png" alt="PPT-XR" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">PPT-XR Plugin</h3>
+          <p class="project-tags">XR, Unity, Plugin</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
 
- <!-- Footer -->
- <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-2 text-center">
-  <p class="text-sm">© 2025 Youkii — Built with ☕ and Passion</p>
-  <div class="flex items-center gap-4 text-xl">
-    <!-- icons or links -->
+      <div class="project-card" data-category="college hardware">
+        <a href="PDP/analog-PID-controller.html">
+          <img src="assets/images/projects/thumbnails/analog-pid-controller.png" alt="Analog PID Controller"
+            class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Analog PID Controller</h3>
+          <p class="project-tags">College, Hardware</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+
+      <div class="project-card" data-category="">
+        <a href="PDP/AI-Avatar.html">
+          <img src="assets/images/projects/thumbnails/AiAvatar_thumbnail.png" alt="AI Avatar" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">AI Avatar</h3>
+          <p class="project-tags">Unity</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="xr">
+        <a href="PDP/Beat-Saber-Clone.html">
+          <img src="assets/images/projects/thumbnails/beatSaberCloneImage.PNG" alt="Beat Saber Clone"
+            class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Beat Saber Clone</h3>
+          <p class="project-tags">XR, Unity, Game</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="">
+        <a href="PDP/Hypercasual-games.html">
+          <img src="assets/images/projects/thumbnails/hypercasualGames.png" alt="Hyper Casual Games"
+            class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Hypercasual Games</h3>
+          <p class="project-tags">Unity, Mobile Game</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="">
+        <a href="PDP/Quran-Model.html">
+          <img src="assets/images/projects/thumbnails/QM_final_Product2.png" alt="Quran 3d Model"
+            class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Quran Model</h3>
+          <p class="project-tags">Modelling</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="XR">
+        <a href="PDP/Kitchen-Chaos-VR.html">
+          <img src="assets/images/projects/thumbnails/KitchenChaosLogo.png" alt="Kitchen Chaos" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Kitchen Chaos VR</h3>
+          <p class="project-tags">XR, Unity, Game</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="">
+        <a href="PDP/CPingPong.html">
+          <img src="assets/images/projects/thumbnails/ping_pong_c.png" alt="c ping pong" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">C Ping Pong</h3>
+          <p class="project-tags">C, no game engine</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="hardware">
+        <a href="PDP/Robot-Hand.html">
+          <img src="assets/images/projects/thumbnails/robotHand.png" alt="robot hand" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Recycled Robot Hand</h3>
+          <p class="project-tags">Recyling, Hardware</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="">
+        <a href="PDP/360HelwanCollege.html">
+          <img src="assets/images/projects/thumbnails/helwanEngineering.png" alt="360 tour helwan engineering"
+            class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">360 tour helwan engineering</h3>
+          <p class="project-tags">360 tour</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="">
+        <a href="PDP/4Cards.html">
+          <img src="assets/images/projects/thumbnails/4cards.png" alt="4 cards" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">4 cards</h3>
+          <p class="project-tags">Unity, Mobile Game</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="college">
+        <a href="PDP/ARCADE.html">
+          <img src="assets/images/projects/thumbnails/ARCADE.png" alt="arcade" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">ARCADE</h3>
+          <p class="project-tags">C++, Console, College</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="college">
+        <a href="PDP/JavaNoteApp.html">
+          <img src="assets/images/projects/thumbnails/JavaNoteApp.png" alt="java Note App" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">Java Note App</h3>
+          <p class="project-tags">Java, College</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="hardware">
+        <a href="PDP/HS-AVR-Drivers.html">
+          <img src="assets/images/projects/thumbnails/HS.png" alt="AVR Drivers" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">AVR Drivers</h3>
+          <p class="project-tags">Hardware
+          </p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <div class="project-card" data-category="college hardware">
+        <a href="PDP/FPGS-ShiftRegister.html">
+          <img src="assets/images/projects/thumbnails/FPGA.png" alt="FPGA Shift Register" class="project-thumb" />
+        </a>
+        <div class="project-info">
+          <h3 class="project-title">FPGA Shift Register</h3>
+          <p class="project-tags">Hardware</p>
+          <!--button class="like-btn">♡ <span class="like-count">0</span></button>-->
+        </div>
+      </div>
+      <!-- More projects... -->
+    </div>
+    <!-- No projects message -->
+    <p id="no-projects" class="hidden text-center text-brown-800 dark:text-[#e8dccf] text-lg mt-6">
+      No projects found for this category.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-2 text-center">
+    <p class="text-sm">© 2025 Youkii — Built with ☕ and Passion</p>
+    <div class="flex items-center gap-4 text-xl">
+      <!-- icons or links -->
+    </div>
   </div>
-</div>
 
 
   <!-- JS -->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
