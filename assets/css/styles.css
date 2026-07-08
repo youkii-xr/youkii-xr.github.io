@@ -657,6 +657,7 @@ html.dark ::selection {
   gap: 0.5rem;
   transition: all 0.3s ease !important;
   text-decoration: none !important;
+  border-radius: 12px !important; /* change from pill rounded-full to match card rounding */
 }
 
 .social-button:hover {
