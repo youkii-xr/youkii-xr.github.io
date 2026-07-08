@@ -910,17 +910,30 @@ html.dark .code-comment {
 
 /* Review Cards */
 .review-card {
+  border-color: #efe7d4 !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.review-card span {
+  border-color: #efe7d4 !important;
 }
 
 .review-card:hover {
   transform: translateY(-4px);
-  border-color: #e0a96d; /* glowing accent border */
+  border-color: #e0a96d !important; /* glowing accent border */
   box-shadow: 0 0 10px rgba(224, 169, 109, 0.5), 0 6px 12px rgba(0, 0, 0, 0.08); /* glowing shadow edge */
 }
 
+html.dark .review-card {
+  border-color: #4e3a2e !important;
+}
+
+html.dark .review-card span {
+  border-color: #4e3a2e !important;
+}
+
 html.dark .review-card:hover {
-  border-color: #f4b97d; /* glowing dark accent border */
+  border-color: #f4b97d !important; /* glowing dark accent border */
   box-shadow: 0 0 10px rgba(244, 185, 125, 0.4), 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
