@@ -2,38 +2,41 @@
 .category-tab {
   padding: 0.5rem 1.25rem;
   border-radius: 9999px;
-  background-color: #e8dccf;
-  color: #5c4537;
-  transition: all 0.2s ease;
+  background-color: #fcefdc;
+  color: #5e4b41;
+  border: 2px solid #c4a489;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  border: 2px solid transparent;
 }
 
 .category-tab:hover {
-  background-color: #f6d25e;
-  transform: translateY(-2px);
+  border-color: #e0a96d;
+  box-shadow: 0 0 10px rgba(224, 169, 109, 0.5), 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .category-tab.active {
-  background-color: #e8c674;
-  color: #2c2621;
+  background-color: #e0a96d;
+  color: #fff;
+  border-color: #e0a96d;
   font-weight: 600;
-  border-color: #c4a489;
 }
 
 .dark .category-tab {
-  background-color: #3a2d26;
+  background-color: #322720;
+  border-color: #5a4537;
   color: #e8dccf;
 }
 
 .dark .category-tab:hover {
-  background-color: #e3ab1c;
+  border-color: #f4b97d;
+  box-shadow: 0 0 10px rgba(244, 185, 125, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .dark .category-tab.active {
-  background-color: #f5bf3f;
-  color: #2a1f1a;
-  border-color: #8d7562;
+  background-color: #f4b97d;
+  color: #2c2621;
+  border-color: #f4b97d;
 }
 
 /* Certificate Card */
